@@ -2,5 +2,6 @@
     <string name="app_name">FairyTales</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Fairy Tales</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="server_client_id">162715126186-fse0lubdk1fjn1skvrse60jg18icls98.apps.googleusercontent.com</string>
 </resources>

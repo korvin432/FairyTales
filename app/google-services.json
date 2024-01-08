@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "162715126186",
+    "project_id": "fairytales-7957f",
+    "storage_bucket": "fairytales-7957f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162715126186:android:e3b5e7ccc0cb7ea85f83d3",
+        "android_client_info": {
+          "package_name": "com.mindyapps.fairytales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162715126186-stv68i6fus1blh4p5juvo94i51qqp0ka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mindyapps.fairytales",
+            "certificate_hash": "60f9420cb09a775ff12ce3e508c17092c42feac7"
+          }
+        },
+        {
+          "client_id": "162715126186-fse0lubdk1fjn1skvrse60jg18icls98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsL4MGho_07mMpbk3xQ7tLI13qz_HSXFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162715126186-fse0lubdk1fjn1skvrse60jg18icls98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
