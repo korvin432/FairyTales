@@ -6,16 +6,29 @@
     app:startDestination="@+id/navigation_fairy_tales">
 
     <fragment
+        android:id="@+id/navigation_fairy_tales"
+        android:name="com.mindyapps.fairytales.feature.fairytales.presentation.FairyTalesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_fairy_tales">
+        <action
+            android:id="@+id/action_navigation_fairy_tales_to_navigation_fairy_tale"
+            app:destination="@id/navigation_fairy_tale" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_fairy_tale"
+        android:name="com.mindyapps.fairytales.feature.fairytale.presentation.FairyTaleFragment"
+        tools:layout="@layout/fragment_fairy_tale">
+        <argument
+            android:name="fairyTale"
+            app:argType="com.mindyapps.fairytales.feature.fairytales.domain.FairyTaleViewData" />
+    </fragment>
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.mindyapps.fairytales.feature.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_fairy_tales"
-        android:name="com.mindyapps.fairytales.feature.fairytales.presentation.FairyTalesFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_fairy_tales" />
 
     <fragment
         android:id="@+id/navigation_profile"

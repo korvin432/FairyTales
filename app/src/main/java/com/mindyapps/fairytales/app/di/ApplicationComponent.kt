@@ -8,6 +8,7 @@ import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import com.mindyapps.fairytales.app.AppApplication
+import com.mindyapps.fairytales.feature.fairytale.core.FairyTaleModule
 import com.mindyapps.fairytales.feature.fairytales.core.FairyTalesModule
 import com.mindyapps.fairytales.feature.profile.core.ProfileModule
 import javax.inject.Singleton
@@ -20,6 +21,7 @@ import javax.inject.Singleton
         AndroidSupportInjectionModule::class,
         FairyTalesModule::class,
         ProfileModule::class,
+        FairyTaleModule::class,
     ]
 )
 interface ApplicationComponent : AndroidInjector<AppApplication> {

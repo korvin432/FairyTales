@@ -1,13 +1,10 @@
 package com.mindyapps.fairytales.feature.fairytales.presentation
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import androidx.navigation.fragment.FragmentNavigator
 import com.mindyapps.fairytales.base.presentation.BaseViewModel
 import com.mindyapps.fairytales.core.mapDistinct
-import com.mindyapps.fairytales.feature.fairytales.domain.FairyTalesViewData
+import com.mindyapps.fairytales.feature.fairytales.domain.FairyTaleViewData
 import com.mindyapps.fairytales.feature.fairytales.domain.GetDataInteractor
-import com.mindyapps.fairytales.feature.fairytales.presentation.FairyTalesViewState
 import javax.inject.Inject
 
 class FairyTalesViewModel @Inject constructor(private val getDataInteractor: GetDataInteractor) :
@@ -25,9 +22,13 @@ class FairyTalesViewModel @Inject constructor(private val getDataInteractor: Get
         state = state.copy(data = getDataInteractor.invoke())
     }
 
-    fun onItemSelect(item: FairyTalesViewData) {
+    fun onItemSelect(item: FairyTaleViewData, extras: FragmentNavigator.Extras) {
         // navigate to otherScreen
         // simple : navigateTo(SimpleFragmentDirections.toOtherScreen(item.id))
+        navigateTo(
+            FairyTalesFragmentDirections.actionNavigationFairyTalesToNavigationFairyTale(item),
+            extras
+        )
     }
 
 }

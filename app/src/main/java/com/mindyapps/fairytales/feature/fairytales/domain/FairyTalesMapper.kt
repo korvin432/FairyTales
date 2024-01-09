@@ -4,9 +4,9 @@ import com.mindyapps.fairytales.feature.fairytales.data.SimpleResponseModel
 import javax.inject.Inject
 
 class FairyTalesMapper @Inject constructor() {
-    fun mapToViewDataEntityList(simpleResponse: List<SimpleResponseModel>): List<FairyTalesViewData> {
+    fun mapToViewDataEntityList(simpleResponse: List<SimpleResponseModel>): List<FairyTaleViewData> {
         return simpleResponse.sortedBy { entity -> entity.id }.map { entity ->
-            FairyTalesViewData(id = entity.id, entity.title, entity.description)
+            FairyTaleViewData(id = entity.id, entity.title, entity.description)
         }
     }
 }

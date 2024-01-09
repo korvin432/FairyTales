@@ -1,8 +1,8 @@
 package com.mindyapps.fairytales.feature.fairytales.data
 
 import com.mindyapps.fairytales.feature.fairytales.domain.FairyTalesMapper
+import com.mindyapps.fairytales.feature.fairytales.domain.FairyTaleViewData
 import com.mindyapps.fairytales.feature.fairytales.domain.FairyTalesRepository
-import com.mindyapps.fairytales.feature.fairytales.domain.FairyTalesViewData
 import javax.inject.Inject
 
 class FairyTalesRepositoryImpl @Inject constructor(
@@ -10,7 +10,7 @@ class FairyTalesRepositoryImpl @Inject constructor(
     private val api: SimpleApi
 ) : FairyTalesRepository {
 
-    override fun getData(): List<FairyTalesViewData> {
+    override fun getData(): List<FairyTaleViewData> {
         //  val response = getMyApi().getData()
 
         val response = mutableListOf<SimpleResponseModel>()

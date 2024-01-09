@@ -4,15 +4,15 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.FragmentNavigator
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.mindyapps.fairytales.R
 import com.mindyapps.fairytales.base.presentation.BaseFragment
-import com.mindyapps.fairytales.core.Event
 import com.mindyapps.fairytales.core.observe
 import com.mindyapps.fairytales.databinding.FragmentFairyTalesBinding
-import com.mindyapps.fairytales.feature.fairytales.domain.FairyTalesViewData
+import com.mindyapps.fairytales.feature.fairytales.domain.FairyTaleViewData
 import com.mindyapps.fairytales.feature.fairytales.presentation.list.FairyTalesAdapter
 
 class FairyTalesFragment : BaseFragment(R.layout.fragment_fairy_tales) {
@@ -45,7 +45,7 @@ class FairyTalesFragment : BaseFragment(R.layout.fragment_fairy_tales) {
         setAdapterList()
     }
 
-    private fun addDataInList(data: List<FairyTalesViewData>) {
+    private fun addDataInList(data: List<FairyTaleViewData>) {
         adapter?.addData(data.toMutableList())
     }
 
@@ -53,8 +53,8 @@ class FairyTalesFragment : BaseFragment(R.layout.fragment_fairy_tales) {
         view.list.adapter = adapter
     }
 
-    private fun renderOnClick(item: FairyTalesViewData, position: Int) {
-        viewModel.onItemSelect(item)
+    private fun renderOnClick(item: FairyTaleViewData, extras: FragmentNavigator.Extras) {
+        viewModel.onItemSelect(item, extras)
     }
 
 }
