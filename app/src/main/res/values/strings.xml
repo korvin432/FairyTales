@@ -4,4 +4,6 @@
     <string name="title_dashboard">Fairy Tales</string>
     <string name="title_profile">Profile</string>
     <string name="server_client_id">162715126186-fse0lubdk1fjn1skvrse60jg18icls98.apps.googleusercontent.com</string>
+    <string name="notification_channel_name">notif channel name</string>
+    <string name="notification_channel_Description">notif channel descr</string>
 </resources>
