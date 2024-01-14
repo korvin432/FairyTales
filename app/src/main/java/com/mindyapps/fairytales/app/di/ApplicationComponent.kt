@@ -11,6 +11,7 @@ import com.mindyapps.fairytales.app.AppApplication
 import com.mindyapps.fairytales.feature.fairytale.core.FairyTaleModule
 import com.mindyapps.fairytales.feature.fairytales.core.FairyTalesModule
 import com.mindyapps.fairytales.feature.profile.core.ProfileModule
+import com.mindyapps.fairytales.feature.sounds.core.SoundsModule
 import javax.inject.Singleton
 
 
@@ -22,6 +23,7 @@ import javax.inject.Singleton
         FairyTalesModule::class,
         ProfileModule::class,
         FairyTaleModule::class,
+        SoundsModule::class,
     ]
 )
 interface ApplicationComponent : AndroidInjector<AppApplication> {

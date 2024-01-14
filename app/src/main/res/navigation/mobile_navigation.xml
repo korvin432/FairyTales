@@ -25,10 +25,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.mindyapps.fairytales.feature.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_sounds"
+        android:name="com.mindyapps.fairytales.feature.sounds.SoundsFragment"
+        android:label="@string/title_sounds"
+        tools:layout="@layout/fragment_sounds" />
 
     <fragment
         android:id="@+id/navigation_profile"
